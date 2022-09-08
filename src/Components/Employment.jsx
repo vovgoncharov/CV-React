@@ -20,21 +20,19 @@ const Employment = () => {
             <Title className="title">Employment history</Title>
             <div className="time-work">
               <p className="own-block__text">
-                Security Service, Smerch Private Security LLC, Kyiv
+                Security Service, Smerch Private Security LLC
               </p>
               <p className="own-block__time-work">April 2019 — present</p>
             </div>
             <div className="time-work">
-              <p className="own-block__text">
-                Fitness Trainer, SportLife, Kyiv
-              </p>
+              <p className="own-block__text">Fitness Trainer, SportLife</p>
               <p className="own-block__time-work">
                 September 2017 - April 2019
               </p>
             </div>
             <div className="time-work">
               <p className="own-block__text">
-                Security Service, TSUM Kyiv Department Store, Kyiv
+                Security Service, TSUM Kyiv Department Store
               </p>
               <p className="own-block__time-work">
                 November 2016 - September 2017
@@ -42,7 +40,7 @@ const Employment = () => {
             </div>
             <div className="time-work">
               <p className="own-block__text">
-                Police Officer, Ministry of Internal Affairs of Ukraine, Bakhmut
+                Police Officer, Ministry of Internal Affairs of Ukraine
               </p>
               <p className="own-block__time-work">March 2012 - May 2015</p>
             </div>

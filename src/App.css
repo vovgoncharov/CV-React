@@ -127,6 +127,9 @@ body {
 .own-block__time-work {
   font-size: 14px;
   color: #b9b5b5;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 5px;
 }
 .time-work {
   margin: 20px 0;

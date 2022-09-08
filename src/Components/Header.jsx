@@ -13,7 +13,7 @@ const Header = (props) => {
                 <br />
                 Honcharov
               </h1>
-              <p className="header__discription">Junior Frontend Developer</p>
+              <p className="header__discription">Junior Front-end Developer</p>
             </div>
             <img
               onClick={props.onHandleChangeOwn}

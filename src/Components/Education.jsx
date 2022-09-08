@@ -20,24 +20,14 @@ const Education = () => {
             <Title className="title">Education</Title>
             <div className="time-work">
               <p className="own-block__text">
-                Bachelor's degree, Donbass State Pedagogical University,
-                Sloviansk
+                Bachelor's degree, Donbass State Pedagogical University
               </p>
               <p className="own-block__time-work">September 2014 - June 2018</p>
               <p className="own-block__facult">Physical education</p>
             </div>
             <div className="time-work">
               <p className="own-block__text">
-                Specialist Degree, Mariupol School of Professional Training for
-                Police, Mariupol
-              </p>
-              <p className="own-block__time-work">
-                March 2012 - September 2012
-              </p>
-            </div>
-            <div className="time-work">
-              <p className="own-block__text">
-                Junior Specialist, Bakhmut Industrial College, Bakhmut
+                Junior Specialist, Bakhmut Industrial College
               </p>
               <p className="own-block__time-work">September 2006 - July 2010</p>
               <p className="own-block__facult">

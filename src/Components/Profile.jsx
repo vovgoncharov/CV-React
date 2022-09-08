@@ -19,8 +19,7 @@ const Profile = () => {
           >
             <Title className="title">Profile</Title>
             <p className="own-block__text">
-              My name is Volodymyr Honcharov.I am 32. I am actively searching
-              for the position of JavaScript developer(React).
+              I am actively searching for the position of Front-end developer.
               <br />
               I deal with such technologies as:
               <br />
@@ -28,9 +27,9 @@ const Profile = () => {
               <br />
               - CSS (Flexbox, CSS Grid, SCSS)
               <br />
-              - JavaScript ES6(React)
+              - JavaScript ES6 (React)
               <br />
-              - React(Redux Toolkit)
+              - React (Redux Toolkit)
               <br />
               - Git
               <br />

@@ -35,14 +35,6 @@ const Languages = (props) => {
                   }
                 ></div>
               </div>
-              <div className="bar-block">
-                <p className="fast-text">Russian</p>
-                <div
-                  className={
-                    props.themeOwn ? "ru theme-pro" : "ru theme-pro theme"
-                  }
-                ></div>
-              </div>
             </div>
           </div>
         </div>
