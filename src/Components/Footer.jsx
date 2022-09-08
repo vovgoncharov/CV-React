@@ -15,7 +15,7 @@ const Footer = () => {
                   Linkedin
                 </a>
               </li>
-              <li class="item">
+              <li className="item">
                 <a
                   href="https://www.instagram.com/vova__honcharov/"
                   target="_blank"
