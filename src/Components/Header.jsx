@@ -8,12 +8,24 @@ const Header = (props) => {
           <div className="header-block">
             <img src={myPhoto} alt="name" className="header__photo" />
             <div className="header-text">
-              <h1 className="header__title">
+              <h1
+                className={
+                  props.themeOwn ? "header__title" : "header__title shadow"
+                }
+              >
                 Volodymyr
                 <br />
                 Honcharov
               </h1>
-              <p className="header__discription">Junior Front-end Developer</p>
+              <p
+                className={
+                  props.themeOwn
+                    ? "header__discription"
+                    : "header__discription shadow"
+                }
+              >
+                Junior Front-end Developer
+              </p>
             </div>
             <img
               onClick={props.onHandleChangeOwn}

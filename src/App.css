@@ -73,7 +73,9 @@ body {
   animation: iden 5s;
   padding-left: 40%;
 }
-
+.shadow {
+  text-shadow: 1px 0px 15px #000;
+}
 .skills-right {
   margin-right: 50px;
 }
@@ -103,6 +105,7 @@ body {
   }
 }
 .details__gmail {
+  text-decoration: none;
   color: black;
   width: 90%;
 }

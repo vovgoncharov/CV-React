@@ -1,62 +1,29 @@
-const Footer = () => {
+import links from "../links";
+const Footer = (props) => {
   return (
     <>
       <footer className="footer">
         <div className="container">
           <div className="foot-block">
             <ul className="social social-foot">
-              <li className="item">
-                <a
-                  href="https://www.linkedin.com/in/volodymyr-honcharov-69098615b/?locale=en_US"
-                  target="_blank"
-                  className="own-block__link"
-                  rel="noreferrer"
-                >
-                  Linkedin
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.instagram.com/vova__honcharov/"
-                  target="_blank"
-                  className="own-block__link"
-                  rel="noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.facebook.com/volodymyr.honcharov/"
-                  target="_blank"
-                  className="own-block__link"
-                  rel="noreferrer"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://github.com/vovgoncharov"
-                  target="_blank"
-                  className="own-block__link"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.codewars.com/users/vovgoncharov"
-                  target="_blank"
-                  className="own-block__link"
-                  rel="noreferrer"
-                >
-                  Codewars
-                </a>
-              </li>
+              {links.map((link) => (
+                <li key={link.id} className="item">
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    className={
+                      props.themeOwn
+                        ? "own-block__link"
+                        : "own-block__link shadow"
+                    }
+                    rel="noreferrer"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
-            <p className="year">2021</p>
+            <p className={props.themeOwn ? "year" : "year shadow"}>2021</p>
           </div>
         </div>
       </footer>

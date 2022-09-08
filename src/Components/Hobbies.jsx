@@ -1,6 +1,6 @@
 import Title from "./Title";
 import { useState } from "react";
-const Hobbies = () => {
+const Hobbies = (props) => {
   const [theme, setTheme] = useState(true);
   const handleChangeEnter = () => setTheme(false);
   const handleChangeLeave = () => setTheme(true);
@@ -18,7 +18,11 @@ const Hobbies = () => {
             onMouseLeave={handleChangeLeave}
           >
             <Title className="title">hobbies</Title>
-            <p className="own-block__text">
+            <p
+              className={
+                props.themeOwn ? "own-block__text" : "own-block__text shadow"
+              }
+            >
               Travelling, Reading, Chess, Football, Computer games
             </p>
           </div>

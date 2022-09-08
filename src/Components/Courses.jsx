@@ -18,11 +18,17 @@ const Courses = () => {
             onMouseEnter={handleChangeEnter}
             onMouseLeave={handleChangeLeave}
           >
-            <Title className="title">courses</Title>
+            <Title className="title">Certifications</Title>
             {courses.map((course) => {
               return (
                 <div key={course.id} className="time-work">
-                  <p className="own-block__text">{course.title}</p>
+                  <p
+                    className={
+                      theme ? "own-block__text" : "own-block__text shadow"
+                    }
+                  >
+                    {course.title}
+                  </p>
                   <p className="own-block__time-work">{course.text}</p>
                 </div>
               );

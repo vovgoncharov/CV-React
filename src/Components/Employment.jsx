@@ -1,6 +1,6 @@
 import Title from "./Title";
 import { useState } from "react";
-const Employment = () => {
+const Employment = (props) => {
   const [theme, setTheme] = useState(true);
   const handleChangeEnter = () => setTheme(false);
   const handleChangeLeave = () => setTheme(true);
@@ -19,19 +19,33 @@ const Employment = () => {
           >
             <Title className="title">Employment history</Title>
             <div className="time-work">
-              <p className="own-block__text">
+              <p
+                className={
+                  props.themeOwn ? "own-block__text" : "own-block__text shadow"
+                }
+              >
                 Security Service, Smerch Private Security LLC
               </p>
               <p className="own-block__time-work">April 2019 - present</p>
             </div>
             <div className="time-work">
-              <p className="own-block__text">Fitness Trainer, SportLife</p>
+              <p
+                className={
+                  props.themeOwn ? "own-block__text" : "own-block__text shadow"
+                }
+              >
+                Fitness Trainer, SportLife
+              </p>
               <p className="own-block__time-work">
                 September 2017 - April 2019
               </p>
             </div>
             <div className="time-work">
-              <p className="own-block__text">
+              <p
+                className={
+                  props.themeOwn ? "own-block__text" : "own-block__text shadow"
+                }
+              >
                 Security Service, TSUM Kyiv Department Store
               </p>
               <p className="own-block__time-work">
@@ -39,7 +53,11 @@ const Employment = () => {
               </p>
             </div>
             <div className="time-work">
-              <p className="own-block__text">
+              <p
+                className={
+                  props.themeOwn ? "own-block__text" : "own-block__text shadow"
+                }
+              >
                 Police Officer, Ministry of Internal Affairs of Ukraine
               </p>
               <p className="own-block__time-work">March 2012 - May 2015</p>

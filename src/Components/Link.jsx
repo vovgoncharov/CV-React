@@ -1,4 +1,5 @@
 import Title from "./Title";
+import links from "../links";
 import { useState } from "react";
 const Link = (props) => {
   const [theme, setTheme] = useState(true);
@@ -19,56 +20,21 @@ const Link = (props) => {
           >
             <Title className="title">links</Title>
             <ul className="social">
-              <li className="item">
-                <a
-                  href="https://www.linkedin.com/in/volodymyr-honcharov-69098615b/?locale=en_US"
-                  target="_blank"
-                  className="own-block__link gmail-pro"
-                  rel="noreferrer"
+              {links.map((link) => (
+                <li
+                  key={link.id}
+                  className={props.themeOwn ? "item" : "item shadow"}
                 >
-                  Linkedin
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.instagram.com/vova__honcharov/"
-                  target="_blank"
-                  className="own-block__link gmail-pro"
-                  rel="noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.facebook.com/volodymyr.honcharov/"
-                  target="_blank"
-                  className="own-block__link gmail-pro"
-                  rel="noreferrer"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://github.com/vovgoncharov"
-                  target="_blank"
-                  className="own-block__link gmail-pro"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li className="item">
-                <a
-                  href="https://www.codewars.com/users/vovgoncharov"
-                  target="_blank"
-                  className="own-block__link gmail-pro"
-                  rel="noreferrer"
-                >
-                  Codewars
-                </a>
-              </li>
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    className="own-block__link gmail-pro"
+                    rel="noreferrer"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

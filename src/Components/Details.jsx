@@ -26,12 +26,20 @@ const Details = (props) => {
               className={
                 props.themeOwn
                   ? "details__gmail gmail-pro"
-                  : "details__gmail gmail-pro gmail"
+                  : "details__gmail gmail-pro gmail shadow"
               }
             >
               deykdog@gmail.com
             </a>
-            <p className="own-block__text phone">0686691755</p>
+            <p
+              className={
+                props.themeOwn
+                  ? "own-block__text phone"
+                  : "own-block__text phone shadow"
+              }
+            >
+              0686691755
+            </p>
           </div>
         </div>
       </section>

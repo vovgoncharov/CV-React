@@ -1,6 +1,6 @@
 import Title from "./Title";
 import { useState } from "react";
-const Profile = () => {
+const Profile = (props) => {
   const [theme, setTheme] = useState(true);
   const handleChangeEnter = () => setTheme(false);
   const handleChangeLeave = () => setTheme(true);
@@ -18,7 +18,11 @@ const Profile = () => {
             onMouseLeave={handleChangeLeave}
           >
             <Title className="title">Profile</Title>
-            <p className="own-block__text">
+            <p
+              className={
+                props.themeOwn ? "own-block__text" : "own-block__text shadow"
+              }
+            >
               I am actively searching for the position of Front-end developer.
               <br />
               I deal with such technologies as:
