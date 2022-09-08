@@ -22,7 +22,7 @@ const Employment = () => {
               <p className="own-block__text">
                 Security Service, Smerch Private Security LLC
               </p>
-              <p className="own-block__time-work">April 2019 — present</p>
+              <p className="own-block__time-work">April 2019 - present</p>
             </div>
             <div className="time-work">
               <p className="own-block__text">Fitness Trainer, SportLife</p>

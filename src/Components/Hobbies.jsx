@@ -19,8 +19,7 @@ const Hobbies = () => {
           >
             <Title className="title">hobbies</Title>
             <p className="own-block__text">
-              English, Reading, Chess, Workout, Running, Football, Computer
-              games.
+              Travelling, Reading, Chess, Football, Computer games
             </p>
           </div>
         </div>
