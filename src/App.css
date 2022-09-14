@@ -91,6 +91,34 @@ body {
     padding-left: 40%;
   }
 }
+.portfolio {
+  padding-top: 30px;
+  background-color: rgb(233, 233, 32);
+}
+.menu-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  list-style: none;
+  margin: 20px;
+  transition: transform 1s;
+}
+.portfolio-item:hover {
+  transform: scale(1.2, 1.2);
+}
+.portfolio-link {
+  text-decoration: none;
+  display: block;
+  max-width: 500px;
+  min-width: 20%;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
 .details-them {
   animation: idens 2s;
   transition: 0.5s;

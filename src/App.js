@@ -11,6 +11,7 @@ import Languages from "./Components/Languages";
 import Courses from "./Components/Courses";
 import Hobbies from "./Components/Hobbies";
 import Footer from "./Components/Footer";
+import Portfolio from "./Components/Portfolio";
 
 function App() {
   const [themeOwn, setThemeOwn] = useState(true);
@@ -34,6 +35,7 @@ function App() {
       <main className="main">
         <Details themeOwn={themeOwn} />
         <Profile themeOwn={themeOwn} />
+        <Portfolio />
         <Link themeOwn={themeOwn} />
         <Employment themeOwn={themeOwn} />
         <Education themeOwn={themeOwn} />
